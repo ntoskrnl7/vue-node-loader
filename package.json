@@ -4,7 +4,7 @@
   "description": "A Node loader module for enhanced-require (Vue)",
   "license": "MIT",
   "repository": "ntoskrnl7/vue-node-loader",
-  "author":  "ntoskrnl7gmail.com",
+  "author": "ntoskrnl7gmail.com",
   "homepage": "https://github.com/ntoskrnl7/vue-node-loader",
   "main": "dist/cjs.js",
   "engines": {
@@ -26,7 +26,7 @@
     "test:coverage": "npm run test:only -- --collectCoverageFrom=\"src/**/*.js\" --coverage",
     "pretest": "npm run lint",
     "test": "npm run test:coverage",
-    "prepare": "npm install && npm run build",
+    "prepare": "husky install && npm run build",
     "release": "standard-version"
   },
   "files": [
@@ -52,6 +52,7 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.23.4",
+    "husky": "^6.0.0",
     "jest": "^27.0.6",
     "lint-staged": "^10.5.4",
     "memfs": "^3.2.2",
